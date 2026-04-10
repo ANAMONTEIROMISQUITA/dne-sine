@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  font-size: 14px;
+}
+
+/* HEADER */
+.topo {
+  background: #0f5c8a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: relative;
+}
+
+.topo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: orange;
+}
+
+.logo img {
+  height: 40px;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  position: relative;
+}
+
+nav a.ativo::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: orange;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.topo {
+  gap: 40px;
+}
+
+/* CONTEÚDO */
+.container {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+h1 {
+  color: #0f5c8a;
+  margin-bottom: 15px;
+  font-size: 22px;
+  text-align: center;
+}
+
+h1 span {
+  font-size: 16px;
+}
+
+
+/* STATUS */
+.status {
+  background: #cfe8d5;
+  color: #2e7d32;
+  padding: 20px;
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* TEXTO */
+.descricao {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.infos {
+  width: 70%;
+}
+
+.linha {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.linha strong {
+  width: 250px;
+}
+
+.foto img {
+  width: 150px;
+  border-radius: 8px;
+}
+
+/* CERTIFICADO */
+.certificado {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  color: #817f7f;
+}
+
+.certificado h3 {
+  margin-bottom: 10px;
+}
+
+.box-certificado {
+  background: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.box-certificado pre {
+  font-size: 12px;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* FOOTER */
+.rodape {
+  background: #1f3447;
+  color: white;
+  padding: 40px 20px 20px;
+  margin-top: 40px;
+  border-top: 4px solid orange;
+}
+
+.rodape h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 30px;
+}
+
+.links div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.links a {
+  color: orange;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.copy {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .topo {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  .logo img {
+    height: 35px;
+  }
+}
+
+.cert-center {
+  text-align: center;
+  display: block;
+}
